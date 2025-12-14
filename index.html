@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Quiz Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Topic Selection Screen -->
+      <div id="topicScreen" class="topic-grid">
+        <div class="topic-card" data-topic="HTML">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/919/919827.png"
+            alt="HTML"
+          />
+          <p>HTML</p>
+        </div>
+
+        <div class="topic-card" data-topic="CSS">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/919/919826.png"
+            alt="CSS"
+          />
+          <p>CSS</p>
+        </div>
+
+        <div class="topic-card" data-topic="JavaScript">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/919/919828.png"
+            alt="JavaScript"
+          />
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <button id="startBtn" class="primary-btn" disabled>Start Quiz</button>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" style="display: none">
+        <div class="progress-container">
+          <div id="progressText"></div>
+          <div class="progress-bar">
+            <div id="progressFill"></div>
+          </div>
+        </div>
+
+        <div id="quizArea"></div>
+        <div id="resultArea"></div>
+        <button id="backBtn" class="back-btn">← Back</button>
+        <div id="quizArea"></div>
+        <div id="resultArea"></div>
+      </div>
+    </div>
+
+    <!-- SCRIPT AT BOTTOM (IMPORTANT) -->
+    <script src="script.js"></script>
+  </body>
+</html>
